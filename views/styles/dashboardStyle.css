@@ -1,0 +1,87 @@
+body {
+    width: 99%;
+    height: 97vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.features-container {
+    height: 100%;
+    width: 20%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 0.5px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.selected-features-content-container {
+    height: 100%;
+    width: 80%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.logo-container {
+    width: 100%;
+    height: 19%;
+    border-top-left-radius: 20px;
+    justify-content: center;
+    align-items: center; 
+     display: flex;
+}
+
+.available-features-container {
+   width: 100%;
+    height: 81%;
+    border-bottom-left-radius: 20px;
+}
+
+.container-of-button-in-features {
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.button-container {
+    height: 40px;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.icon-part-of-button-of-features {
+    height: 100%;
+    width: 30%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.text-part-of-button-of-features {
+    height: 100%;
+    width: 70%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.middle-part-in-logo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: url('../img/chef3.png');
+    background-size: cover;
+}
