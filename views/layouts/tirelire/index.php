@@ -58,6 +58,6 @@
     <div class="selected-features-content-container"></div>
 </body>
 <script src="../../../Constants/language.js"></script>
-<script src="../../../Controllers/dashboardController.js"></script>
-<script src="../../../Controllers/tirelireController.js"></script>
+<script src="../../../Controllers/dashboard controllers/dashboardController.js"></script>
+<script src="../../../Controllers/tirelire controllers/tirelireController.js"></script>
 </html>

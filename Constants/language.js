@@ -5,6 +5,8 @@ var ORDERS;
 var TIRELIRE;
 var EXPENSES;
 var PROFILE;
+var SHOW_MENU_BUTTON;
+var EDIT_MENU_BUTTON;
 
 function setLanguageIntoArabic() {
     MENU = "القائمة";
@@ -13,6 +15,8 @@ function setLanguageIntoArabic() {
     TIRELIRE = "لاكاس";
     EXPENSES = "المصاريف";
     PROFILE = "الملف الشخصي";
+    SHOW_MENU_BUTTON = "عرض";
+    EDIT_MENU_BUTTON = "تعديل";
 }
 
 function setLanguageIntoEnglish() {
@@ -22,4 +26,6 @@ function setLanguageIntoEnglish() {
     TIRELIRE = "Tirelire";
     EXPENSES = "Expenses";
     PROFILE = "Profile";
+    SHOW_MENU_BUTTON = "Show";
+    EDIT_MENU_BUTTON = "Edit";
 }

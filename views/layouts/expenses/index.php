@@ -58,6 +58,6 @@
     <div class="selected-features-content-container"></div>
 </body>
 <script src="../../../Constants/language.js"></script>
-<script src="../../../Controllers/dashboardController.js"></script>
-<script src="../../../Controllers/expensesController.js"></script>
+<script src="../../../Controllers/dashboard controllers/dashboardController.js"></script>
+<script src="../../../Controllers/exspenses controllers/expensesController.js"></script>
 </html>

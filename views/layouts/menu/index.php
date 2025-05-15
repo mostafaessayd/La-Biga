@@ -6,6 +6,7 @@ if($conn->connect_error) {
 
 $sql_query = "CREATE TABLE IF NOT EXISTS categories(name VARCHAR(20) PRIMARY KEY);";
 $conn->query($sql_query);
+$conn->close();
 ?>
 
 <!DOCTYPE html>
@@ -70,24 +71,23 @@ $conn->query($sql_query);
     <div class="selected-features-content-container">
         <div id="show-edit-menu-layout">
             <div class="half-in-menu">
-                <div class="available-options-card" onclick="location.href='./show menu/'">
+                <div class="available-options-card" onclick="showMenu()">
                     <div class="img-part-available-options-card"></div>
-                    <div class="title-part-available-options-card"><h2>Show</h2></div>
+                    <div class="title-part-available-options-card" id="show-menu-button"></div>
                 </div>
             </div>
             <div class="half-in-menu">
                 <div class="available-options-card">
                     <div class="img-part-available-options-card"></div>
-                    <div class="title-part-available-options-card"><h2>Edit</h2></div>
+                    <div class="title-part-available-options-card" id="edit-menu-button"></div>
                 </div>
             </div>
         </div>
         <!--  -->
-        <div id="show-menu" style="display: none;">
         </div>
     </div>
 </body>
 <script src="../../../Constants/language.js"></script>
-<script src="../../../Controllers/dashboardController.js"></script>
-<script src="../../../Controllers/menuController.js"></script>
+<script src="../../../Controllers/dashboard controllers/dashboardController.js"></script>
+<script src="../../../Controllers/menu controllers/menuController.js"></script>
 </html>

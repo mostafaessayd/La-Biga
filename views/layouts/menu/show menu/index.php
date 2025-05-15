@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div class="features-container">
         <div class="logo-container">
@@ -19,37 +21,37 @@
         </div>
         <div class="available-features-container">
             <div class="container-of-button-in-features">
-                <div class="button-container" onclick="location.href='../../layouts/menu/'">
+                <div class="button-container" onclick="location.href='../../../layouts/menu/'">
                     <div class="icon-part-of-button-of-features" id="menu"><i class="fa-solid fa-bars"></i></div>
                     <div class="text-part-of-button-of-features" id="menu-text"></div>
                 </div>
             </div>
             <div class="container-of-button-in-features">
-                <div class="button-container" onclick="location.href='../../layouts/orders/'">
+                <div class="button-container" onclick="location.href='../../../layouts/orders/'">
                     <div class="icon-part-of-button-of-features" id="orders"><i class="fa-solid fa-pizza-slice"></i></div>
                     <div class="text-part-of-button-of-features" id="orders-text"></div>
                 </div>
             </div>
             <div class="container-of-button-in-features">
-                <div class="button-container" onclick="location.href='../../layouts/settings/'">
+                <div class="button-container" onclick="location.href='../../../layouts/settings/'">
                     <div class="icon-part-of-button-of-features" id="settings"><i class="fa-solid fa-gear"></i></div>
                     <div class="text-part-of-button-of-features" id="settings-text"></div>
                 </div>
             </div>
             <div class="container-of-button-in-features">
-                <div class="button-container" onclick="location.href='../../layouts/tirelire/'">
+                <div class="button-container" onclick="location.href='../../../layouts/tirelire/'">
                     <div class="icon-part-of-button-of-features" id="tirelire"><i class="fa-solid fa-money-check-dollar"></i></div>
                     <div class="text-part-of-button-of-features" id="tirelire-text"></div>
                 </div>
             </div>
-             <div class="container-of-button-in-features">
-                <div class="button-container" onclick="location.href='../../layouts/expenses/'">
+            <div class="container-of-button-in-features">
+                <div class="button-container" onclick="location.href='../../../layouts/expenses/'">
                     <div class="icon-part-of-button-of-features" id="expenses"><i class="fa-solid fa-basket-shopping"></i></div>
                     <div class="text-part-of-button-of-features" id="expenses-text"></div>
                 </div>
             </div>
             <div class="container-of-button-in-features">
-                <div class="button-container" onclick="location.href='../../layouts/profile/'">
+                <div class="button-container" onclick="location.href='../../../layouts/profile/'">
                     <div class="icon-part-of-button-of-features" id="profile"><i class="fa-solid fa-user"></i></div>
                     <div class="text-part-of-button-of-features" id="profile-text"></div>
                 </div>
@@ -59,10 +61,85 @@
     <!--  -->
     <div class="selected-features-content-container">
         <div id="show-menu">
+            <div class="container-of-category-in-show-menu">
+                <div class="container-of-single-category-in-show-menu">
+                    <div class="name-of-category-in-show-menu"><h2>pizza</h2></div>
+                    <div class="available-product-in-category-in-show-menu">
+                        <div class="type-in-category-in-show-menu"><h4>pizza chawerma</h4></div>
+                        <div class="price-of-type-in-category-in-show-menu"><h4>50000 DA</h4></div>
+                    </div>
+                    <div class="tail-of-container-of-single-category-in-show-menu"></div>
+                </div>
+            </div>
+
+            <div class="container-of-category-in-show-menu">
+                <div class="container-of-single-category-in-show-menu">
+                    <div class="name-of-category-in-show-menu"><h2>pizza</h2></div>
+                    <div class="available-product-in-category-in-show-menu"></div>
+                    <div class="tail-of-container-of-single-category-in-show-menu"></div>
+                </div>
+            </div>
+
+            <div class="container-of-category-in-show-menu">
+                <div class="container-of-single-category-in-show-menu">
+                    <div class="name-of-category-in-show-menu"><h2>pizza</h2></div>
+                    <div class="available-product-in-category-in-show-menu"></div>
+                    <div class="tail-of-container-of-single-category-in-show-menu"></div>
+                </div>
+            </div>
+
+            <div class="container-of-category-in-show-menu">
+                <div class="container-of-single-category-in-show-menu">
+                    <div class="name-of-category-in-show-menu"><h2>pizza</h2></div>
+                    <div class="available-product-in-category-in-show-menu"></div>
+                    <div class="tail-of-container-of-single-category-in-show-menu"></div>
+                </div>
+            </div>
+
+            <div class="container-of-category-in-show-menu">
+                <div class="container-of-single-category-in-show-menu">
+                    <div class="name-of-category-in-show-menu"><h2>pizza</h2></div>
+                    <div class="available-product-in-category-in-show-menu"></div>
+                    <div class="tail-of-container-of-single-category-in-show-menu"></div>
+                </div>
+            </div>
+
+            <div class="container-of-category-in-show-menu">
+                <div class="container-of-single-category-in-show-menu">
+                    <div class="name-of-category-in-show-menu"><h2>pizza</h2></div>
+                    <div class="available-product-in-category-in-show-menu"></div>
+                    <div class="tail-of-container-of-single-category-in-show-menu"></div>
+                </div>
+            </div>
+
+            <div class="container-of-category-in-show-menu">
+                <div class="container-of-single-category-in-show-menu">
+                    <div class="name-of-category-in-show-menu"><h2>pizza</h2></div>
+                    <div class="available-product-in-category-in-show-menu"></div>
+                    <div class="tail-of-container-of-single-category-in-show-menu"></div>
+                </div>
+            </div>
+
+            <div class="container-of-category-in-show-menu">
+                <div class="container-of-single-category-in-show-menu">
+                    <div class="name-of-category-in-show-menu"><h2>pizza</h2></div>
+                    <div class="available-product-in-category-in-show-menu"></div>
+                    <div class="tail-of-container-of-single-category-in-show-menu"></div>
+                </div>
+            </div>
+
+            <div class="container-of-category-in-show-menu">
+                <div class="container-of-single-category-in-show-menu">
+                    <div class="name-of-category-in-show-menu"><h2>pizza</h2></div>
+                    <div class="available-product-in-category-in-show-menu"></div>
+                    <div class="tail-of-container-of-single-category-in-show-menu"></div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
 <script src="../../../../Constants/language.js"></script>
-<script src="../../../../Controllers/dashboardController.js"></script>
-<script src="../../../../Controllers/menuController.js"></script>
+<script src="../../../../Controllers/dashboard controllers/dashboardController.js"></script>
+<script src="../../../../Controllers/menu controllers/showMenuController.js"></script>
+
 </html>
