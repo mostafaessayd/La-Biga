@@ -1,21 +1,11 @@
-<?php
-$conn = new mysqli('localhost' , 'root' , '' , 'LaBiga');
-if($conn->connect_error) {
-    die('connection failed ' .$conn->connect_error);
-}
-
-$sql_query = "CREATE TABLE IF NOT EXISTS categories(name VARCHAR(20) PRIMARY KEY);";
-$conn->query($sql_query);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dashboard</title>
-    <link rel="stylesheet" href="../../styles/dashboardStyle.css">
-    <link rel="stylesheet" href="../../styles/menuStyle.css">
+    <link rel="stylesheet" href="../../../styles/dashboardStyle.css">
+    <link rel="stylesheet" href="../../../styles/menuStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -68,26 +58,11 @@ $conn->query($sql_query);
     </div>
     <!--  -->
     <div class="selected-features-content-container">
-        <div id="show-edit-menu-layout">
-            <div class="half-in-menu">
-                <div class="available-options-card" onclick="location.href='./show menu/'">
-                    <div class="img-part-available-options-card"></div>
-                    <div class="title-part-available-options-card"><h2>Show</h2></div>
-                </div>
-            </div>
-            <div class="half-in-menu">
-                <div class="available-options-card">
-                    <div class="img-part-available-options-card"></div>
-                    <div class="title-part-available-options-card"><h2>Edit</h2></div>
-                </div>
-            </div>
-        </div>
-        <!--  -->
-        <div id="show-menu" style="display: none;">
+        <div id="show-menu">
         </div>
     </div>
 </body>
-<script src="../../../Constants/language.js"></script>
-<script src="../../../Controllers/dashboardController.js"></script>
-<script src="../../../Controllers/menuController.js"></script>
+<script src="../../../../Constants/language.js"></script>
+<script src="../../../../Controllers/dashboardController.js"></script>
+<script src="../../../../Controllers/menuController.js"></script>
 </html>

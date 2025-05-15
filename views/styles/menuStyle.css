@@ -1,0 +1,54 @@
+.half-in-menu {
+    height:100%;
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#show-edit-menu-layout {
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.available-options-card {
+    height: 70%;
+    width: 60%;
+}
+
+.img-part-available-options-card {
+    height: 85%;
+    width: 100%;
+    border: 0.5px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-part-available-options-card {
+    height: 15%;
+    width: 100%;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: black;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#show-menu {
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
