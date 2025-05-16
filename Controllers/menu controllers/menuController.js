@@ -9,3 +9,7 @@ document.getElementById('edit-menu-button').innerHTML = `<h2>${EDIT_MENU_BUTTON}
 function showMenu() {
     location.href = './show menu/';
 }
+
+function goToAddCategoriesProductsPage() {
+    location.href = './add categories and products/';
+}

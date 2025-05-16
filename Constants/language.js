@@ -7,6 +7,9 @@ var EXPENSES;
 var PROFILE;
 var SHOW_MENU_BUTTON;
 var EDIT_MENU_BUTTON;
+var ADD_CATEGORY_BUTTON;
+var IGNORE_CATEGORY_BUTTON;
+var GO_TO_ADD_PRODUCT_BUTTON;
 
 function setLanguageIntoArabic() {
     MENU = "القائمة";
@@ -17,6 +20,9 @@ function setLanguageIntoArabic() {
     PROFILE = "الملف الشخصي";
     SHOW_MENU_BUTTON = "عرض";
     EDIT_MENU_BUTTON = "تعديل";
+    ADD_CATEGORY_BUTTON = "إضافة الصنف";
+    IGNORE_CATEGORY_BUTTON = "تجاهل";
+    GO_TO_ADD_PRODUCT_BUTTON = "إضافة منتوج";
 }
 
 function setLanguageIntoEnglish() {
@@ -28,4 +34,7 @@ function setLanguageIntoEnglish() {
     PROFILE = "Profile";
     SHOW_MENU_BUTTON = "Show";
     EDIT_MENU_BUTTON = "Edit";
+    ADD_CATEGORY_BUTTON = "Add Category";
+    IGNORE_CATEGORY_BUTTON = "Ignore";
+    GO_TO_ADD_PRODUCT_BUTTON = "Add Product";
 }
