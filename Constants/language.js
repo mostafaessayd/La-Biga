@@ -10,6 +10,12 @@ var EDIT_MENU_BUTTON;
 var ADD_CATEGORY_BUTTON;
 var IGNORE_CATEGORY_BUTTON;
 var GO_TO_ADD_PRODUCT_BUTTON;
+var CHOICE_OF_SELECT_CATEGORY_IN_ADD_PRODUCT;
+var PLACEHOLDER_OF_INPUT_PRICE;
+var PLACEHOLDER_OF_INPUT_PRODUCT;
+var PLACEHOLDER_OF_INPUT_CATEGORY;
+var OFFERS;
+var BUTTON_OF_ADD_OFFERS;
 
 function setLanguageIntoArabic() {
     MENU = "القائمة";
@@ -23,6 +29,11 @@ function setLanguageIntoArabic() {
     ADD_CATEGORY_BUTTON = "إضافة الصنف";
     IGNORE_CATEGORY_BUTTON = "تجاهل";
     GO_TO_ADD_PRODUCT_BUTTON = "إضافة منتوج";
+    PLACEHOLDER_OF_INPUT_CATEGORY = "إختر الصنف";
+    PLACEHOLDER_OF_INPUT_PRICE = "أدخل السعر";
+    PLACEHOLDER_OF_INPUT_PRODUCT = "أدخل إسم المنتوج";
+    OFFERS = "العروض";
+    BUTTON_OF_ADD_OFFERS = "إضافة عرض جديد";
 }
 
 function setLanguageIntoEnglish() {
@@ -37,4 +48,10 @@ function setLanguageIntoEnglish() {
     ADD_CATEGORY_BUTTON = "Add Category";
     IGNORE_CATEGORY_BUTTON = "Ignore";
     GO_TO_ADD_PRODUCT_BUTTON = "Add Product";
+    CHOICE_OF_SELECT_CATEGORY_IN_ADD_PRODUCT = "Choose a category";
+    PLACEHOLDER_OF_INPUT_CATEGORY = "Choose category";
+    PLACEHOLDER_OF_INPUT_PRICE = "Enter the price";
+    PLACEHOLDER_OF_INPUT_PRODUCT = "Enter the product";
+    OFFERS = "Offers";
+    BUTTON_OF_ADD_OFFERS = "Add offre";
 }

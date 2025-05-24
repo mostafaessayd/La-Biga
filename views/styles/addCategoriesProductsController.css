@@ -1,38 +1,64 @@
-.container-card-of-add-categories-and-products , #form-of-container-card-of-add-categories-and-products {
-    height:100%;
-    width:100%;
-    justify-content:center;
-    align-items:center;
-    display:flex;
+.container-card-of-add-categories-and-products,
+.form-of-container-card-of-add-categories-and-products {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 #card-of-add-category-in-add-categories-and-products {
     width: 30%;
-    height:300px;
+    height: 300px;
+}
+
+#card-of-add-product-in-add-categories-and-products {
+    width: 30%;
+    height: 460px;
 }
 
 .container-of-single-node-in-card-of-add-category-in-add-categories-and-products {
-    width:100%;
-    height:25%;
-    justify-content:center;
-    align-items:center;
-    display:flex;
+    width: 100%;
+    height: 25%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
-#card-of-add-category-in-add-categories-and-products button {
+.container-of-single-node-in-card-of-add-product-in-add-categories-and-products {
+    width: 100%;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#card-of-add-category-in-add-categories-and-products button,
+#card-of-add-product-in-add-categories-and-products button {
     background-color: black;
     color: white;
-    justify-content:center;
-    align-items:center;
-    display:flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     height: 80%;
     width: 90%;
     border-radius: 20px;
 }
 
-#card-of-add-category-in-add-categories-and-products input {
-    align-items:center;
+#card-of-add-category-in-add-categories-and-products input,
+#card-of-add-product-in-add-categories-and-products input {
+    align-items: center;
     height: 50%;
     width: 90%;
     border-radius: 10px;
+}
+
+.container-of-single-node-in-card-of-add-product-in-add-categories-and-products select {
+    /* border: 1px solid #ccc; */
+    background-color: #000;
+    color: #fff;
+    height: 50%;
+    width: 90%;
+    border-radius: 10px;
+    overflow: scroll;
 }

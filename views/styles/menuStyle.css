@@ -57,7 +57,7 @@
 .container-of-category-in-show-menu {
     height: max-content;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 30px; 
     display:flex;
     justify-content: center;
     align-items: center;
@@ -76,6 +76,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    /* background-color: rgb(159, 30, 30); */
     background-color: black;
     color: white;
     border-top-left-radius: 20px;
@@ -85,6 +86,7 @@
 .tail-of-container-of-single-category-in-show-menu {
     height: 10px;
     width: 100%;
+    /* background-color: rgb(159, 30, 30); */
     background-color: black;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;

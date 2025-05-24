@@ -33,6 +33,12 @@
                 </div>
             </div>
             <div class="container-of-button-in-features">
+                <div class="button-container" onclick="location.href='../../../layouts/offers/'">
+                    <div class="icon-part-of-button-of-features" id="offers"><i class="fa-solid fa-percent"></i></div>
+                    <div class="text-part-of-button-of-features" id="offers-text"></div>
+                </div>
+            </div>
+            <div class="container-of-button-in-features">
                 <div class="button-container" onclick="location.href='../../../layouts/settings/'">
                     <div class="icon-part-of-button-of-features" id="settings"><i class="fa-solid fa-gear"></i></div>
                     <div class="text-part-of-button-of-features" id="settings-text"></div>
@@ -61,80 +67,7 @@
     <!--  -->
     <div class="selected-features-content-container">
         <div id="show-menu">
-            <div class="container-of-category-in-show-menu">
-                <div class="container-of-single-category-in-show-menu">
-                    <div class="name-of-category-in-show-menu"><h2>pizza</h2></div>
-                    <div class="available-product-in-category-in-show-menu">
-                        <div class="type-in-category-in-show-menu"><h4>pizza chawerma</h4></div>
-                        <div class="price-of-type-in-category-in-show-menu"><h4>50000 DA</h4></div>
-                    </div>
-                    <div class="tail-of-container-of-single-category-in-show-menu"></div>
-                </div>
-            </div>
-
-            <div class="container-of-category-in-show-menu">
-                <div class="container-of-single-category-in-show-menu">
-                    <div class="name-of-category-in-show-menu"><h2>pizza</h2></div>
-                    <div class="available-product-in-category-in-show-menu"></div>
-                    <div class="tail-of-container-of-single-category-in-show-menu"></div>
-                </div>
-            </div>
-
-            <div class="container-of-category-in-show-menu">
-                <div class="container-of-single-category-in-show-menu">
-                    <div class="name-of-category-in-show-menu"><h2>pizza</h2></div>
-                    <div class="available-product-in-category-in-show-menu"></div>
-                    <div class="tail-of-container-of-single-category-in-show-menu"></div>
-                </div>
-            </div>
-
-            <div class="container-of-category-in-show-menu">
-                <div class="container-of-single-category-in-show-menu">
-                    <div class="name-of-category-in-show-menu"><h2>pizza</h2></div>
-                    <div class="available-product-in-category-in-show-menu"></div>
-                    <div class="tail-of-container-of-single-category-in-show-menu"></div>
-                </div>
-            </div>
-
-            <div class="container-of-category-in-show-menu">
-                <div class="container-of-single-category-in-show-menu">
-                    <div class="name-of-category-in-show-menu"><h2>pizza</h2></div>
-                    <div class="available-product-in-category-in-show-menu"></div>
-                    <div class="tail-of-container-of-single-category-in-show-menu"></div>
-                </div>
-            </div>
-
-            <div class="container-of-category-in-show-menu">
-                <div class="container-of-single-category-in-show-menu">
-                    <div class="name-of-category-in-show-menu"><h2>pizza</h2></div>
-                    <div class="available-product-in-category-in-show-menu"></div>
-                    <div class="tail-of-container-of-single-category-in-show-menu"></div>
-                </div>
-            </div>
-
-            <div class="container-of-category-in-show-menu">
-                <div class="container-of-single-category-in-show-menu">
-                    <div class="name-of-category-in-show-menu"><h2>pizza</h2></div>
-                    <div class="available-product-in-category-in-show-menu"></div>
-                    <div class="tail-of-container-of-single-category-in-show-menu"></div>
-                </div>
-            </div>
-
-            <div class="container-of-category-in-show-menu">
-                <div class="container-of-single-category-in-show-menu">
-                    <div class="name-of-category-in-show-menu"><h2>pizza</h2></div>
-                    <div class="available-product-in-category-in-show-menu"></div>
-                    <div class="tail-of-container-of-single-category-in-show-menu"></div>
-                </div>
-            </div>
-
-            <div class="container-of-category-in-show-menu">
-                <div class="container-of-single-category-in-show-menu">
-                    <div class="name-of-category-in-show-menu"><h2>pizza</h2></div>
-                    <div class="available-product-in-category-in-show-menu"></div>
-                    <div class="tail-of-container-of-single-category-in-show-menu"></div>
-                </div>
-            </div>
+            
         </div>
     </div>
 </body>

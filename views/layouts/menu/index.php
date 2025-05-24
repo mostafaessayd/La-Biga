@@ -46,6 +46,12 @@ $conn->close();
                 </div>
             </div>
             <div class="container-of-button-in-features">
+                <div class="button-container" onclick="location.href='../../layouts/offers/'">
+                    <div class="icon-part-of-button-of-features" id="offers"><i class="fa-solid fa-percent"></i></div>
+                    <div class="text-part-of-button-of-features" id="offers-text"></div>
+                </div>
+            </div>
+            <div class="container-of-button-in-features">
                 <div class="button-container" onclick="location.href='../../layouts/settings/'">
                     <div class="icon-part-of-button-of-features" id="settings"><i class="fa-solid fa-gear"></i></div>
                     <div class="text-part-of-button-of-features" id="settings-text"></div>

@@ -1,0 +1,269 @@
+#container-of-offers {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.card-of-add-offer {
+    height: 95%;
+    width: 30%;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-of-single-row-in-offers {
+    height: 80%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.top-part-of-card-of-add-offer {
+    height: 10%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.middle-part-of-card-of-add-offer {
+    height: 80%;
+    width: 99.5%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.bottom-part-of-card-of-add-offer {
+    height: 10%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.hidden-card-in-offers {
+    height: 95%;
+    width: 30%;
+    margin: 15px;
+}
+
+#contaier-of-form-of-add-new-offer {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.part-of-add-product-into-offer {
+    height: 100%;
+    width: 50%;
+}
+
+.part-of-confirm-or-ignore-created-offer {
+    height: 100%;
+    width: 50%;
+}
+
+.offer-name-in-form-of-add-offer,
+.container-of-button-in-form-of-add-offer {
+    height: 15%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.available-products-in-offer-container {
+    height: 55%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container-of-button-in-form-of-add-offer input {
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 70%;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.offer-name-in-form-of-add-offer input {
+    margin: 15px;
+    height: 40%;
+    width: 40%;
+    border-radius: 20px;
+}
+
+#available-product-in-offer {
+    height: 90%;
+    width: 90%;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+#part-of-select-category-in-add-new-offer,
+#part-of-select-product-in-add-new-offer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 20%;
+    width: 100%;
+}
+
+#part-of-select-category-in-add-new-offer select,
+#part-of-select-product-in-add-new-offer select {
+    height: 30%;
+    width: 70%;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+.container-of-single-componant-in-add-new-offer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 20%;
+    width: 100%;
+}
+
+.container-of-single-componant-in-add-new-offer button {
+    height: 50%;
+    width: 70%;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+.container-of-single-componant-in-add-new-offer input {
+    height: 30%;
+    width: 70%;
+    border-radius: 20px;
+}
+
+.container-of-single-product-in-available-product-in-offer {
+    height: 20%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.part-of-name-in-container-of-single-product-in-available-product-in-offer {
+    height: 100%;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.part-of-delete-in-container-of-single-product-in-available-product-in-offer {
+    height: 100%;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.product-in-offer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid black;
+    height: 60%;
+    width: 90%;
+}
+
+#container-of-show-offers {
+    height: 100%;
+    width: 100%;
+}
+
+.container-of-card-of-show-offer {
+    height: 95%;
+    width: 30%;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-part-in-container-of-card-of-show-offer {
+    height: 10%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.middle-part-in-container-of-card-of-show-offer {
+    height: 80%;
+    width: 99.5%;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.bottom-part-in-container-of-card-of-show-offer {
+    height: 10%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.price-of-offer-in-card-of-show-offer {
+    height: 100%;
+    width: 30%;
+    border-top-right-radius: 20px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.name-of-offer-in-card-of-show-offer {
+    height: 100%;
+    width: 70%;
+    border-top-left-radius: 20px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

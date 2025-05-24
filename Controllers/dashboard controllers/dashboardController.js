@@ -15,6 +15,7 @@ function setFeaturesTexts() {
     document.getElementById('tirelire-text').textContent = TIRELIRE;
     document.getElementById('expenses-text').textContent = EXPENSES;
     document.getElementById('profile-text').textContent = PROFILE;
+    document.getElementById('offers-text').textContent = OFFERS;
 }
 
 initTextsLanguage();

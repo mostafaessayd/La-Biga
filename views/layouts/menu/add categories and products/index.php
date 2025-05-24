@@ -33,6 +33,12 @@
                 </div>
             </div>
             <div class="container-of-button-in-features">
+                <div class="button-container" onclick="location.href='../../../layouts/offers/'">
+                    <div class="icon-part-of-button-of-features" id="offers"><i class="fa-solid fa-percent"></i></div>
+                    <div class="text-part-of-button-of-features" id="offers-text"></div>
+                </div>
+            </div>
+            <div class="container-of-button-in-features">
                 <div class="button-container" onclick="location.href='../../../layouts/settings/'">
                     <div class="icon-part-of-button-of-features" id="settings"><i class="fa-solid fa-gear"></i></div>
                     <div class="text-part-of-button-of-features" id="settings-text"></div>
@@ -60,21 +66,49 @@
     </div>
     <!--  -->
     <div class="selected-features-content-container">
-        <form id="form-of-container-card-of-add-categories-and-products" action="../../../../Data/add categories and products/addCategoriesProducts.php" method="post">
+        <form id="add-category-form" class="form-of-container-card-of-add-categories-and-products" action="../../../../Data/add categories and products/addCategoriesProducts.php" method="post">
             <input type="hidden" name="table" value="categories">
             <div class="container-card-of-add-categories-and-products">
                 <div id="card-of-add-category-in-add-categories-and-products">
                     <div class="container-of-single-node-in-card-of-add-category-in-add-categories-and-products">
-                        <input type="text" id="add-category-name" name="category_name">
+                        <input type="text" id="add-category-name" name="category_name" placeholder="أدخل إسم الصنف">
                     </div>
                     <div class="container-of-single-node-in-card-of-add-category-in-add-categories-and-products">
                         <button id="button-of-add-category" type="submit"></button>
                     </div>
                     <div class="container-of-single-node-in-card-of-add-category-in-add-categories-and-products">
-                        <button id="button-of-ignore-category"></button>
+                        <button id="button-of-ignore-category" type="button"></button>
                     </div>
                     <div class="container-of-single-node-in-card-of-add-category-in-add-categories-and-products">
-                        <button id="button-of-go-to-add-product-card"></button>
+                        <button id="button-of-go-to-add-product-card" type="button" onclick="convertCardIntoAddProduct()"></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!--  -->
+        <form style="display: none;" id="add-product-form" class="form-of-container-card-of-add-categories-and-products" action="../../../../Data/add categories and products/addCategoriesProducts.php" method="post">
+            <input type="hidden" name="table" value="products">
+            <input type="hidden" id="description" name="description" value="good">
+            <div class="container-card-of-add-categories-and-products">
+                <div id="card-of-add-product-in-add-categories-and-products">
+                    <div class="container-of-single-node-in-card-of-add-product-in-add-categories-and-products">
+                        <input type="text" id="product_name" name="product_name" placeholder="أدخل إسم المنتج">
+                    </div>
+                    <div class="container-of-single-node-in-card-of-add-product-in-add-categories-and-products"
+                    id="select-categories-in-add-product">
+                        <!-- <input type="text" id="category" name="category" placeholder="إختر إسم الصنف"> -->
+                    </div>
+                    <div class="container-of-single-node-in-card-of-add-product-in-add-categories-and-products">
+                        <input type="number" id="price" name="price" placeholder="أدخل السعر">
+                    </div>
+                    <div class="container-of-single-node-in-card-of-add-product-in-add-categories-and-products">
+                        <button id="button-of-add-product" type="submit"></button>
+                    </div>
+                    <div class="container-of-single-node-in-card-of-add-product-in-add-categories-and-products">
+                        <button id="button-of-ignore-product" type="button"></button>
+                    </div>
+                    <div class="container-of-single-node-in-card-of-add-product-in-add-categories-and-products">
+                        <button id="button-of-go-to-add-category-card" type="button" onclick="convertCardIntoAddCategory()"></button>
                     </div>
                 </div>
             </div>
