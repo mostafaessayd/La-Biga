@@ -1,6 +1,6 @@
 // change varibale texts according to the selected language
 function initTextsLanguage() {
-    var language = "anglais";
+    var language = "arabic";
     switch (language) {
         case "arabic": setLanguageIntoArabic(); break;
         case "anglais": setLanguageIntoEnglish(); break;

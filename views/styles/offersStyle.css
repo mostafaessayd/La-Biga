@@ -43,6 +43,7 @@
     align-items: center;
     border-left: 1px solid black;
     border-right: 1px solid black;
+    background-color: rebeccapurple;
 }
 
 .bottom-part-of-card-of-add-offer {
@@ -240,10 +241,10 @@
     justify-content: center;
     display: flex;
     align-items: center;
-    background-color: black;
+    /* background-color: black; */
     color: white;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    /* border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
 }
 
 .price-of-offer-in-card-of-show-offer {
@@ -266,4 +267,16 @@
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+#part-of-delete-offer-in-card-of-show-offer {
+    height: 100%;
+    width: 20%;
+    background-color:aqua;
+}
+
+#part-of-left-days-in-card-of-show-offer {
+    height: 100%;
+    width: 80%;
+    background-color: rebeccapurple;
 }

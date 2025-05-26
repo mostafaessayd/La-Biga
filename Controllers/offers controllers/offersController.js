@@ -4,6 +4,13 @@ document.getElementById('offers-text').style.color = 'white';
 document.getElementById('offers').style.backgroundColor = 'black';
 document.getElementById('offers-text').style.backgroundColor = 'black';
 //document.getElementById('button-of-add-new-offer').textContent = `<h3>${BUTTON_OF_ADD_OFFERS}</h3>`;
+document.getElementById('products-number-in-offer').placeholder = PLACEHOLDER_OF_NUMBER_PRODUCTS_INPUT_IN_ADD_OFFER;
+document.getElementById('add-product-in-offer-button').textContent = ADD_PRODUCT_IN_OFFER_BUTTON;
+document.getElementById('back-to-show-offers-button').textContent = BACK_TO_SHOW_OFFERS_PAGE_BUTTON;
+document.getElementById('name-of-offer').placeholder = PLACEHOLDER_OF_NAME_INPUT_IN_ADD_OFFER;
+document.getElementById('price-of-offer').placeholder = PLACEHOLDER_OF_PRICE_INPUT_IN_ADD_OFFER;
+document.getElementById('confirm-add-offer-button').value = CONFIRM_ADD_OFFER_BUTTON;
+document.getElementById('ignore-add-offer-button').value = IGNORE_ADD_OFFER_BUTTON;
 
 // generate an innert html of add offer option
 function generateCardOfAddOffer() {
@@ -40,14 +47,14 @@ async function getListOfProduct() {
 async function generateSelectOfAvailableProductsInAddOfferOf(name) {
     if (name == "") {
         var page = `<select id="select-product-in-add-offer" name="product">
-    <option value="" disabled selected hidden>${PLACEHOLDER_OF_INPUT_CATEGORY}</option>`;
+    <option value="" disabled selected hidden>${PLACEHOLDER_OF_INPUT_PRODUCT}</option>`;
         page += `</select>`;
         document.getElementById('part-of-select-product-in-add-new-offer').innerHTML = page;
         return;
     }
     var List = await getListOfProduct();
     var page = `<select id="select-product-in-add-offer" name="product">
-    <option value="" disabled selected hidden>${PLACEHOLDER_OF_INPUT_CATEGORY}</option>`;
+    <option value="" disabled selected hidden>${PLACEHOLDER_OF_INPUT_PRODUCT}</option>`;
     for (let i = 0; i < List.length; i++) {
         if (List[i].name != name) {
             continue;
@@ -145,43 +152,63 @@ async function getListOfCurrentOffers() {
 
 async function generateListOfCurrentOffers() {
     var list = await getListOfCurrentOffers();
-    for(let i = 0 ; i < list.length - 2; i++) {
-        
-    }
     var page = ``;
     var i = 0;
-    var l = 0;
-    for(; i < list.length ; i++) {
-        if(i + i % 3 >= list.length) {
+    for (; i < list.length; i++) {
+        if (i + 3 > list.length) {
             break;
         }
-        if(l == 3) {
-            page += `</div>`;
-            l = 0;
-        }
-        if(l == 0) {
-            page += `<div class="container-of-single-row-in-offers">`;
-        }
-
-        var list01 = decodeListOfAvailableProducts(list[i].available_offers);
-        var availableList01 = getInnerHTMLOf(list01);
+        page += `<div class="container-of-single-row-in-offers">`;
+        // show first offer 
+        var L = decodeListOfAvailableProducts(list[i].available_offers);
+        var availableList = getInnerHTMLOf(L);
         page += `
-                <div class="container-of-single-row-in-offers">
-                    <div class="container-of-card-of-show-offer">
-                        <div class="top-part-in-container-of-card-of-show-offer">
-                            <div class="name-of-offer-in-card-of-show-offer"><h3>${list[i].name}</h3></div>
-                            <div class="price-of-offer-in-card-of-show-offer"><h3>${list[i].price} DA</h3></div>
-                        </div>
-                        <div class="middle-part-in-container-of-card-of-show-offer">${availableList01}</div>
-                        <div class="bottom-part-in-container-of-card-of-show-offer"></div>
-                    </div>
-                </div>
+        <div class="container-of-card-of-show-offer">
+            <div class="top-part-in-container-of-card-of-show-offer">
+                <div class="name-of-offer-in-card-of-show-offer"><h3>${list[i].name}</h3></div>
+                <div class="price-of-offer-in-card-of-show-offer"><h3>${list[i].price} DA</h3></div>
+            </div>
+            <div class="middle-part-in-container-of-card-of-show-offer">${availableList}</div>
+            <div class="bottom-part-in-container-of-card-of-show-offer"></div>
+        </div>
         `;
+
+        // show second offer
+        i++;
+        L = decodeListOfAvailableProducts(list[i].available_offers);
+        availableList = getInnerHTMLOf(L);
+        page += `
+        <div class="container-of-card-of-show-offer">
+            <div class="top-part-in-container-of-card-of-show-offer">
+                <div class="name-of-offer-in-card-of-show-offer"><h3>${list[i].name}</h3></div>
+                <div class="price-of-offer-in-card-of-show-offer"><h3>${list[i].price} DA</h3></div>
+            </div>
+            <div class="middle-part-in-container-of-card-of-show-offer">${availableList}</div>
+            <div class="bottom-part-in-container-of-card-of-show-offer"></div>
+        </div>
+        `;
+
+        // show third offer
+        i++;
+        L = decodeListOfAvailableProducts(list[i].available_offers);
+        availableList = getInnerHTMLOf(L);
+        page += `
+        <div class="container-of-card-of-show-offer">
+            <div class="top-part-in-container-of-card-of-show-offer">
+                <div class="name-of-offer-in-card-of-show-offer"><h3>${list[i].name}</h3></div>
+                <div class="price-of-offer-in-card-of-show-offer"><h3>${list[i].price} DA</h3></div>
+            </div>
+            <div class="middle-part-in-container-of-card-of-show-offer">${availableList}</div>
+            <div class="bottom-part-in-container-of-card-of-show-offer"></div>
+        </div>
+        `;
+        page += `</div>`;
     }
-    
+
+    // filling the last part
     l = 2 - list.length % 3;
     page += `<div class="container-of-single-row-in-offers">`;
-    while(l-- > 0) {
+    while (l-- > 0) {
         page += `<div class="hidden-card-in-offers"></div>`;
     }
     page += `
@@ -191,33 +218,32 @@ async function generateListOfCurrentOffers() {
                         <div class="bottom-part-of-card-of-add-offer" id="button-of-add-new-offer"></div>
                     </div>
     `;
-    // for(; i < list.length ; i++) {
-    //     list01 = decodeListOfAvailableProducts(list[i].available_offers)
-    //     availableList01 = getInnerHTMLOf(list01);
-    //     page += `
-    //                         <div class="container-of-card-of-show-offer">
-    //                     <div class="top-part-in-container-of-card-of-show-offer">
-    //                         <div class="name-of-offer-in-card-of-show-offer"><h3>${list[i].name}</h3></div>
-    //                         <div class="price-of-offer-in-card-of-show-offer"><h3>${list[i].price} DA</h3></div>
-    //                     </div>
-    //                     <div class="middle-part-in-container-of-card-of-show-offer">${availableList01}</div>
-    //                     <div class="bottom-part-in-container-of-card-of-show-offer"></div>
-    //                 </div>
-    //     `;
-    // }
-     page += `</div>`
+    for (; i < list.length; i++) {
+        L = decodeListOfAvailableProducts(list[i].available_offers)
+        availableList = getInnerHTMLOf(L);
+        page += `
+                        <div class="container-of-card-of-show-offer">
+                        <div class="top-part-in-container-of-card-of-show-offer">
+                            <div class="name-of-offer-in-card-of-show-offer"><h3>${list[i].name}</h3></div>
+                            <div class="price-of-offer-in-card-of-show-offer"><h3>${list[i].price} DA</h3></div>
+                        </div>
+                        <div class="middle-part-in-container-of-card-of-show-offer">${availableList}</div>
+                        <div class="bottom-part-in-container-of-card-of-show-offer"></div>
+                    </div>
+        `;
+    }
+    page += `</div>`;
+
     document.getElementById('container-of-show-offers').innerHTML = page;
 }
 
-generateListOfCurrentOffers();
-
-
+//generateListOfCurrentOffers();
 // decode list of available products from database
 function decodeListOfAvailableProducts(encodedString) {
     var decodedList = [];
-    for(let i = 0 ; i < encodedString.length ;) {
+    for (let i = 1; i < encodedString.length;) {
         var t = "";
-        while(i < encodedString.length && encodedString[i] != '#') {
+        while (i < encodedString.length && encodedString[i] != '#') {
             t += encodedString[i];
             i++;
         }
@@ -230,7 +256,7 @@ function decodeListOfAvailableProducts(encodedString) {
 // convert decoded aailable list into innerhtml 
 function getInnerHTMLOf(list) {
     var page = `<ul>`;
-    for(let i = 0 ; i < list.length ; i++) {
+    for (let i = 0; i < list.length; i++) {
         page += `<li><h4>${list[i]}</h4></li>`
     }
     page += `</li>`;
