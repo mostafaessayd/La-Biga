@@ -23,6 +23,7 @@ var PLACEHOLDER_OF_NAME_INPUT_IN_ADD_OFFER;
 var PLACEHOLDER_OF_NUMBER_PRODUCTS_INPUT_IN_ADD_OFFER;
 var CONFIRM_ADD_OFFER_BUTTON;
 var IGNORE_ADD_OFFER_BUTTON;
+var DAYS_LEFT_TEXT_IN_SHOW_OFFER;
 
 function setLanguageIntoArabic() {
     MENU = "القائمة";
@@ -48,6 +49,7 @@ function setLanguageIntoArabic() {
     PLACEHOLDER_OF_NUMBER_PRODUCTS_INPUT_IN_ADD_OFFER = "عدد المنتجات";
     CONFIRM_ADD_OFFER_BUTTON = "إضافة العرض";
     IGNORE_ADD_OFFER_BUTTON = "تجاهل";
+    DAYS_LEFT_TEXT_IN_SHOW_OFFER = "يوم متبقي";
 }
 
 function setLanguageIntoEnglish() {
@@ -75,4 +77,5 @@ function setLanguageIntoEnglish() {
     PLACEHOLDER_OF_NUMBER_PRODUCTS_INPUT_IN_ADD_OFFER = "Number of products";
     CONFIRM_ADD_OFFER_BUTTON = "Add offer";
     IGNORE_ADD_OFFER_BUTTON = "Igonre";
+    DAYS_LEFT_TEXT_IN_SHOW_OFFER = "Days left";
 }

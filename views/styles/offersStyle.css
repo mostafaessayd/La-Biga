@@ -5,6 +5,7 @@
     align-items: center;
     overflow: scroll;
     scrollbar-width: none;
+    position: fixed;
 }
 
 .card-of-add-offer {
@@ -43,7 +44,6 @@
     align-items: center;
     border-left: 1px solid black;
     border-right: 1px solid black;
-    background-color: rebeccapurple;
 }
 
 .bottom-part-of-card-of-add-offer {
@@ -239,12 +239,12 @@
     height: 10%;
     width: 100%;
     justify-content: center;
-    display: flex;
     align-items: center;
-    /* background-color: black; */
+    display: flex;
+    background-color: black;
     color: white;
-    /* border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .price-of-offer-in-card-of-show-offer {
@@ -271,12 +271,31 @@
 
 #part-of-delete-offer-in-card-of-show-offer {
     height: 100%;
-    width: 20%;
-    background-color:aqua;
+    width: 15%;
+    background-color:black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-bottom-right-radius: 20px;
 }
 
 #part-of-left-days-in-card-of-show-offer {
     height: 100%;
-    width: 80%;
-    background-color: rebeccapurple;
+    width: 85%;
+    background-color:black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-bottom-left-radius: 20px;
+}
+
+#confim-delete-offer-pop-up {
+    /* top: 0; left: 0; */
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      /* z-index: 999; */
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
 }

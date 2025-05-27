@@ -143,6 +143,20 @@ function backToShowOffersPage() {
     document.getElementById('contaier-of-form-of-add-new-offer').style.display = 'none';
 }
 
+// get number of left days from today
+function DaysLeft(date) {
+  const targetDate = new Date(date); 
+  const currentDate = new Date(); 
+
+  targetDate.setHours(0, 0, 0, 0);
+  currentDate.setHours(0, 0, 0, 0);
+
+  const diffTime = targetDate - currentDate; 
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+
+  return diffDays >= 0 ? diffDays : 0; 
+}
+
 // fetch the list of curent offers from database
 async function getListOfCurrentOffers() {
     const response = await fetch("../../../Data/get data/getCurrentOffers.php");
@@ -169,7 +183,11 @@ async function generateListOfCurrentOffers() {
                 <div class="price-of-offer-in-card-of-show-offer"><h3>${list[i].price} DA</h3></div>
             </div>
             <div class="middle-part-in-container-of-card-of-show-offer">${availableList}</div>
-            <div class="bottom-part-in-container-of-card-of-show-offer"></div>
+            <div class="bottom-part-in-container-of-card-of-show-offer">
+                <div id="part-of-left-days-in-card-of-show-offer">${DaysLeft(list[i].date_of_end)} Days left</div>
+                <div id="part-of-delete-offer-in-card-of-show-offer"
+                onclick="deleteOffer(${list[i].id})"><i class="fa-solid fa-trash"></i></div>
+            </div>
         </div>
         `;
 
@@ -184,7 +202,11 @@ async function generateListOfCurrentOffers() {
                 <div class="price-of-offer-in-card-of-show-offer"><h3>${list[i].price} DA</h3></div>
             </div>
             <div class="middle-part-in-container-of-card-of-show-offer">${availableList}</div>
-            <div class="bottom-part-in-container-of-card-of-show-offer"></div>
+            <div class="bottom-part-in-container-of-card-of-show-offer">
+                <div id="part-of-left-days-in-card-of-show-offer">${DaysLeft(list[i].date_of_end)} Days left</div>
+                <div id="part-of-delete-offer-in-card-of-show-offer"
+                onclick="deleteOffer(${list[i].id})"><i class="fa-solid fa-trash"></i></div>
+            </div>
         </div>
         `;
 
@@ -199,7 +221,11 @@ async function generateListOfCurrentOffers() {
                 <div class="price-of-offer-in-card-of-show-offer"><h3>${list[i].price} DA</h3></div>
             </div>
             <div class="middle-part-in-container-of-card-of-show-offer">${availableList}</div>
-            <div class="bottom-part-in-container-of-card-of-show-offer"></div>
+           <div class="bottom-part-in-container-of-card-of-show-offer">
+                <div id="part-of-left-days-in-card-of-show-offer">${DaysLeft(list[i].date_of_end)} Days left</div>
+                <div id="part-of-delete-offer-in-card-of-show-offer"
+                onclick="deleteOffer(${list[i].id})"><i class="fa-solid fa-trash"></i></div>
+            </div>
         </div>
         `;
         page += `</div>`;
@@ -228,7 +254,11 @@ async function generateListOfCurrentOffers() {
                             <div class="price-of-offer-in-card-of-show-offer"><h3>${list[i].price} DA</h3></div>
                         </div>
                         <div class="middle-part-in-container-of-card-of-show-offer">${availableList}</div>
-                        <div class="bottom-part-in-container-of-card-of-show-offer"></div>
+                       <div class="bottom-part-in-container-of-card-of-show-offer">
+                <div id="part-of-left-days-in-card-of-show-offer">${DaysLeft(list[i].date_of_end)} Days left</div>
+                <div id="part-of-delete-offer-in-card-of-show-offer"
+                onclick="deleteOffer(${list[i].id})"><i class="fa-solid fa-trash"></i></div>
+            </div>
                     </div>
         `;
     }
@@ -237,7 +267,6 @@ async function generateListOfCurrentOffers() {
     document.getElementById('container-of-show-offers').innerHTML = page;
 }
 
-//generateListOfCurrentOffers();
 // decode list of available products from database
 function decodeListOfAvailableProducts(encodedString) {
     var decodedList = [];
@@ -262,3 +291,17 @@ function getInnerHTMLOf(list) {
     page += `</li>`;
     return page;
 }
+
+// delete offer by his id
+async function deleteOffer(id) {
+    const formData = new FormData();
+    formData.append("id-of-offer" , id);
+    var t = await fetch("../../../Data/set data/delete data/deleteOffer.php" , {
+        method : "POST" ,
+        body : formData
+    }).then(res => res.json()).then(response => {
+    });
+    generateListOfCurrentOffers();
+}
+
+generateListOfCurrentOffers();

@@ -83,29 +83,13 @@ $conn->close();
     </div>
     <!--  -->
     <div class="selected-features-content-container">
+        <div id="confim-delete-offer-pop-up">
+            <!--  -->
+        </div>
         <div id="container-of-offers">
             <!-- filling by js functions -->
             <div id="container-of-show-offers">
                 <!--  -->
-                <div class="container-of-single-row-in-offers">
-                    <div class="container-of-card-of-show-offer">
-                        <div class="top-part-in-container-of-card-of-show-offer">
-                            <div class="name-of-offer-in-card-of-show-offer"><h3>${list[i].name}</h3></div>
-                            <div class="price-of-offer-in-card-of-show-offer"><h3>${list[i].price} DA</h3></div>
-                        </div>
-                        <div class="middle-part-in-container-of-card-of-show-offer">${availableList01}</div>
-                        <div class="bottom-part-in-container-of-card-of-show-offer">
-                            <div id="part-of-left-days-in-card-of-show-offer"></div>
-                            <div id="part-of-delete-offer-in-card-of-show-offer"></div>
-                        </div>
-                    </div>
-                    <!--  -->
-                    <div class="card-of-add-offer" onclick="goToAddNewOfferPage()">
-                        <div class="top-part-of-card-of-add-offer"></div>
-                        <div class="middle-part-of-card-of-add-offer"></div>
-                        <div class="bottom-part-of-card-of-add-offer" id="button-of-add-new-offer"></div>
-                    </div>
-                </div>
             </div>
             <!--  -->
             <div id="contaier-of-form-of-add-new-offer" style="display: none;">
@@ -118,10 +102,10 @@ $conn->close();
                     </div>
                     <div class="container-of-single-componant-in-add-new-offer"><input type="number" id="products-number-in-offer"></div>
                     <div class="container-of-single-componant-in-add-new-offer"><button onclick="addProductIntoOffer()"
-                    id="add-product-in-offer-button"></button></div>
+                            id="add-product-in-offer-button"></button></div>
                     <div class="container-of-single-componant-in-add-new-offer"><button onclick="backToShowOffersPage()"
-                    id="back-to-show-offers-button"></button></div>
-                </div> 
+                            id="back-to-show-offers-button"></button></div>
+                </div>
 
                 <div class="part-of-confirm-or-ignore-created-offer">
                     <form method="POST" style="height: 100%;width:100%;">
@@ -137,10 +121,10 @@ $conn->close();
                                 <!-- filling by js -->
                             </div>
                         </div>
-                        <div class="container-of-button-in-form-of-add-offer"><input type="submit" 
-                        id="confirm-add-offer-button"></div>
+                        <div class="container-of-button-in-form-of-add-offer"><input type="submit"
+                                id="confirm-add-offer-button"></div>
                         <div class="container-of-button-in-form-of-add-offer"><input type="button"
-                        id="ignore-add-offer-button"></div>
+                                id="ignore-add-offer-button"></div>
                     </form>
                 </div>
             </div>
