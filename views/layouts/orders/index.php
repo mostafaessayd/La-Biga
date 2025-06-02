@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dashboard</title>
     <link rel="stylesheet" href="../../styles/dashboardStyle.css">
+    <link rel="stylesheet" href="../../styles/ordersStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div class="features-container">
         <div class="logo-container">
@@ -47,7 +50,7 @@
                     <div class="text-part-of-button-of-features" id="tirelire-text"></div>
                 </div>
             </div>
-             <div class="container-of-button-in-features">
+            <div class="container-of-button-in-features">
                 <div class="button-container" onclick="location.href='../../layouts/expenses/'">
                     <div class="icon-part-of-button-of-features" id="expenses"><i class="fa-solid fa-basket-shopping"></i></div>
                     <div class="text-part-of-button-of-features" id="expenses-text"></div>
@@ -61,9 +64,33 @@
             </div>
         </div>
     </div>
-    <div class="selected-features-content-container"></div>
+    <div class="selected-features-content-container">
+        <div id="container-of-dashboard-of-orders">
+            <!-- -->
+            <div id="dashboard-of-all-products-in-container-of-dashboard-of-orders">
+                <div class="head-of-dashboard-in-container-of-dashboard-of-orders">
+                    <div class="part-of-name-in-head-of-dashboard-in-container-of-dashboard-of-orders"
+                        id="dashboard-title-in-part-of-name-in-head-of-dashboard-in-container-of-dashboard-of-orders"></div>
+                    <div class="part-of-add-new-order-in-head-of-dashboard-in-container-of-dashboard-of-orders">
+                        <i class="fa-solid fa-square-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="dashboard-of-all-orders-in-container-of-dashboard-of-orders">
+                <div class="head-of-dashboard-in-container-of-dashboard-of-orders">
+                    <div class="part-of-name-in-head-of-dashboard-in-container-of-dashboard-of-orders"
+                        id="dashboard-title-in-part-of-name-in-head-of-dashboard-in-container-of-dashboard-of-orders"></div>
+                    <div class="part-of-add-new-order-in-head-of-dashboard-in-container-of-dashboard-of-orders">
+                        <i class="fa-solid fa-square-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="../../../Constants/language.js"></script>
 <script src="../../../Controllers/dashboard controllers/dashboardController.js"></script>
 <script src="../../../Controllers/orders controllers/ordersController.js"></script>
+<script src=""></script>
+
 </html>

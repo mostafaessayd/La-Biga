@@ -5,7 +5,6 @@
     align-items: center;
     overflow: scroll;
     scrollbar-width: none;
-    position: fixed;
 }
 
 .card-of-add-offer {
@@ -62,6 +61,15 @@
     height: 95%;
     width: 30%;
     margin: 15px;
+}
+
+.add-image-in-card-of-add-offer {
+    height: 80%;
+    width: 80%;
+    border-radius: 100px;
+    /* background-color: aqua; */
+    background-image: url('././img/add-offer-icon.png');
+    background-size: cover;
 }
 
 #contaier-of-form-of-add-new-offer {
@@ -177,9 +185,17 @@
 
 .part-of-name-in-container-of-single-product-in-available-product-in-offer {
     height: 100%;
-    width: 90%;
+    width: 80%;
     align-items: center;
     justify-content: center;
+    display: flex;
+}
+
+.part-of-edit-in-container-of-single-product-in-available-product-in-offer {
+    height: 100%;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
     display: flex;
 }
 
@@ -272,7 +288,7 @@
 #part-of-delete-offer-in-card-of-show-offer {
     height: 100%;
     width: 15%;
-    background-color:black;
+    background-color: black;
     color: white;
     justify-content: center;
     align-items: center;
@@ -283,19 +299,10 @@
 #part-of-left-days-in-card-of-show-offer {
     height: 100%;
     width: 85%;
-    background-color:black;
+    background-color: black;
     color: white;
     justify-content: center;
     align-items: center;
     display: flex;
     border-bottom-left-radius: 20px;
-}
-
-#confim-delete-offer-pop-up {
-    /* top: 0; left: 0; */
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.5);
-      /* z-index: 999; */
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
 }

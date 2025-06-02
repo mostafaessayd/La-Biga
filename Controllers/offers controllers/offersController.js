@@ -75,6 +75,7 @@ function setSelectOfProductsInAddOffer() {
 var listOfProducts = [];
 var textOfAvailableoffer = "";
 function addProductIntoOffer() {
+    alert(';;');
     var productName = document.getElementById('select-product-in-add-offer').value;
     var numberOfProduct = document.getElementById('products-number-in-offer').value;
     listOfProducts.push({ numberOfProduct: numberOfProduct, productName: productName });
@@ -84,17 +85,35 @@ function addProductIntoOffer() {
     textOfAvailableoffer += "-";
     textOfAvailableoffer += productName + "";
     document.getElementById('available-product-in-offer-hidden-value').value = textOfAvailableoffer;
+    var idOfShowThisContainer = "show-product-number-";
+    var idOfEditThisContainer = "edit-product-number-";
+    idOfEditThisContainer += toString(listOfProducts.length - 1);
+    idOfShowThisContainer += toString(listOfProducts.length - 1);
     page += `
     <div class="container-of-single-product-in-available-product-in-offer">
-                                <div class="product-in-offer">
+                                <div class="product-in-offer" id="${idOfShowThisContainer}">
                                     <div class="part-of-name-in-container-of-single-product-in-available-product-in-offer">
-                                        ${numberOfProduct} ${productName}
+                                        ${numberOfProduct} ${productName} ${idOfShowThisContainer}
+                                    </div>
+                                    <div class="part-of-edit-in-container-of-single-product-in-available-product-in-offer">
+                                        <i class="fa-solid fa-pen"></i>
                                     </div>
                                     <div onclick="deleteProductFromOffer(${listOfProducts.length - 1})" class="part-of-delete-in-container-of-single-product-in-available-product-in-offer">
                                         <i class="fa-solid fa-trash"></i>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="product-in-offer" id="${idOfEditThisContainer}" style="display:none">
+                                    <div class="part-of-name-in-container-of-single-product-in-available-product-in-offer">
+                                        ${numberOfProduct} ${productName} ${idOfEditThisContainer}
+                                    </div>
+                                    <div class="part-of-edit-in-container-of-single-product-in-available-product-in-offer">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </div>
+                                    <div onclick="deleteProductFromOffer(${listOfProducts.length - 1})" class="part-of-delete-in-container-of-single-product-in-available-product-in-offer">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </div>
+                                </div>
+    </div>
     `;
     document.getElementById('available-product-in-offer').innerHTML = page;
 }
@@ -117,13 +136,16 @@ function deleteProductFromOffer(id) {
     <div class="container-of-single-product-in-available-product-in-offer">
                                 <div class="product-in-offer">
                                     <div class="part-of-name-in-container-of-single-product-in-available-product-in-offer">
-                                        ${listOfProducts[i].numberOfProduct} ${listOfProducts[i].productName}
+                                        ${listOfProducts[i].numberOfProduct} ${listOfProducts[i].productName}  ll
+                                    </div>
+                                    <div class="part-of-edit-in-container-of-single-product-in-available-product-in-offer">
+                                        <i class="fa-solid fa-pen"></i>
                                     </div>
                                     <div onclick="deleteProductFromOffer(${j++})" class="part-of-delete-in-container-of-single-product-in-available-product-in-offer">
                                         <i class="fa-solid fa-trash"></i>
                                     </div>
                                 </div>
-                            </div>
+    </div>
     `;
     }
     listOfProducts = newProducts;
@@ -240,7 +262,10 @@ async function generateListOfCurrentOffers() {
     page += `
                         <div class="card-of-add-offer" onclick="goToAddNewOfferPage()">
                         <div class="top-part-of-card-of-add-offer"></div>
-                        <div class="middle-part-of-card-of-add-offer"></div>
+                        <div class="middle-part-of-card-of-add-offer">
+                           <div class="add-image-in-card-of-add-offer">
+                           </div>
+                        </div>
                         <div class="bottom-part-of-card-of-add-offer" id="button-of-add-new-offer"></div>
                     </div>
     `;

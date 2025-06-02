@@ -83,9 +83,6 @@ $conn->close();
     </div>
     <!--  -->
     <div class="selected-features-content-container">
-        <div id="confim-delete-offer-pop-up">
-            <!--  -->
-        </div>
         <div id="container-of-offers">
             <!-- filling by js functions -->
             <div id="container-of-show-offers">
