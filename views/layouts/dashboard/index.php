@@ -13,6 +13,9 @@ $conn->query($sql_query);
 $sql_query = "CREATE TABLE IF NOT EXISTS lang(selectedLanguage VARCHAR(20) PRIMARY KEY);";
 $conn->query($sql_query);
 
+$sql_query = "CREATE TABLE IF NOT EXISTS products_are_in_preparation(id INT AUTO_INCREMENT PRIMARY KEY , product_id INT NOT NULL);";
+$conn->query($sql_query);
+
 $conn->close();
 ?>
 

@@ -75,13 +75,18 @@
                         <i class="fa-solid fa-square-plus"></i>
                     </div>
                 </div>
+                <div id="container-of-show-current-products-in-dashboard-of-all-products-in-container-of-dashboard-of-orders">
+                    <ul>pizza</ul>
+                    <ul>welcom</ul>
+                    <ul>soso</ul>
+                </div>
             </div>
             <div id="dashboard-of-all-orders-in-container-of-dashboard-of-orders">
                 <div class="head-of-dashboard-in-container-of-dashboard-of-orders">
                     <div class="part-of-name-in-head-of-dashboard-in-container-of-dashboard-of-orders"
                         id="dashboard-title-in-part-of-name-in-head-of-dashboard-in-container-of-dashboard-of-orders"></div>
                     <div class="part-of-add-new-order-in-head-of-dashboard-in-container-of-dashboard-of-orders">
-                        <i class="fa-solid fa-square-plus"></i>
+                        <i class="fa-solid fa-eye"></i>
                     </div>
                 </div>
             </div>
